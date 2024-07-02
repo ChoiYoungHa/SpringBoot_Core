@@ -2,7 +2,11 @@ package org.core.spring_core.member;
 
 public class MemberServiceImpl implements MemberService {
 
-    private final MemberRepository memoryRepository = new MemberMemoryRepository();
+    private final MemberRepository memoryRepository;
+
+    public MemberServiceImpl(MemberMemoryRepository memoryRepository) {
+        this.memoryRepository = memoryRepository;
+    }
 
     @Override
 

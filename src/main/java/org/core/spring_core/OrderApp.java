@@ -11,8 +11,9 @@ import org.core.spring_core.order.OrderServiceImpl;
 public class OrderApp {
     public static void main(String[] args) {
 
-        MemberService memberService = new MemberServiceImpl();
-        OrderService orderService = new OrderServiceImpl();
+        AppConfig app = new AppConfig();
+        MemberService memberService = app.memberService();
+        OrderService orderService = app.orderService();
 
         Long memberId = 1L;
         Member member = new Member(memberId, "MemberA", Grade.VIP);
