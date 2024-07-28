@@ -1,9 +1,8 @@
-package org.core.spring_core.singtone;
+package org.core.spring_core.singletone;
 
 import org.assertj.core.api.Assertions;
 import org.core.spring_core.AppConfig;
 import org.core.spring_core.member.MemberRepository;
-import org.core.spring_core.member.MemberService;
 import org.core.spring_core.member.MemberServiceImpl;
 import org.core.spring_core.order.OrderServiceImpl;
 import org.junit.jupiter.api.Test;

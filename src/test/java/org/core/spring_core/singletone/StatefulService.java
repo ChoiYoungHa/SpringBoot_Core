@@ -1,4 +1,4 @@
-package org.core.spring_core.singtone;
+package org.core.spring_core.singletone;
 
 public class StatefulService {
 
