@@ -4,7 +4,10 @@ import org.core.spring_core.member.Grade;
 import org.core.spring_core.member.Member;
 import org.core.spring_core.member.MemberService;
 import org.core.spring_core.member.MemberServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FixDiscountPolicy implements DiscountPolicy{
 
     private int discountFixAmount = 1000;
